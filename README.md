@@ -18,13 +18,13 @@ This toolkit gives you programmatic access to your own recordings. Download audi
 
 ```bash
 git clone https://github.com/sergivalverde/plaud.git
-cd plaud && npm install
+cd plaud && pnpm install
 ```
 
 ### 1. Login
 
 ```bash
-npx tsx packages/cli/bin/plaud.ts login
+pnpx tsx packages/cli/bin/plaud.ts login
 ```
 
 Enter your email, password, and region (us/eu). Credentials are stored locally in `~/.plaud/config.json` (mode 0600).
@@ -35,16 +35,16 @@ Enter your email, password, and region (us/eu). Credentials are stored locally i
 
 ```bash
 # List recordings
-npx tsx packages/cli/bin/plaud.ts list
+pnpx tsx packages/cli/bin/plaud.ts list
 
 # Get transcript
-npx tsx packages/cli/bin/plaud.ts transcript <recording-id>
+pnpx tsx packages/cli/bin/plaud.ts transcript <recording-id>
 
 # Download audio
-npx tsx packages/cli/bin/plaud.ts download <recording-id> ./audio/
+pnpx tsx packages/cli/bin/plaud.ts download <recording-id> ./audio/
 
 # Sync all recordings to a folder
-npx tsx packages/cli/bin/plaud.ts sync ./plaud-notes/
+pnpx tsx packages/cli/bin/plaud.ts sync ./plaud-notes/
 ```
 
 ### 3. MCP Server
@@ -55,7 +55,7 @@ Add to your Claude config (`~/.claude.json`):
 {
   "mcpServers": {
     "plaud": {
-      "command": "npx",
+      "command": "pnpx",
       "args": ["tsx", "/path/to/plaud/packages/mcp/src/index.ts"]
     }
   }

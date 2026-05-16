@@ -10,7 +10,7 @@ export async function transcriptCommand(args: string[]): Promise<void> {
   const config = new PlaudConfig();
   const creds = config.getCredentials();
   const auth = new PlaudAuth(config);
-  const client = new PlaudClient(auth, creds?.region ?? 'eu');
+  const client = new PlaudClient(auth, creds?.region ?? 'us');
 
   const detail = await client.getRecording(id);
 

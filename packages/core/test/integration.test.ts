@@ -10,7 +10,7 @@ describe.skipIf(!HAS_CREDS)('integration (live API)', () => {
   const config = new PlaudConfig();
   const creds = config.getCredentials()!;
   const auth = new PlaudAuth(config);
-  const client = new PlaudClient(auth, creds?.region ?? 'eu');
+  const client = new PlaudClient(auth, creds?.region ?? 'us');
 
   it('gets user info', async () => {
     const user = await client.getUserInfo();

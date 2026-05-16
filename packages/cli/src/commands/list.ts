@@ -4,7 +4,7 @@ function createClient(): PlaudClient {
   const config = new PlaudConfig();
   const creds = config.getCredentials();
   const auth = new PlaudAuth(config);
-  return new PlaudClient(auth, creds?.region ?? 'eu');
+  return new PlaudClient(auth, creds?.region ?? 'us');
 }
 
 export async function listCommand(_args: string[]): Promise<void> {

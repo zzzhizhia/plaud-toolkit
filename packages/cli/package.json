@@ -6,6 +6,6 @@
     "plaud": "./bin/plaud.ts"
   },
   "dependencies": {
-    "@plaud/core": "*"
+    "@plaud/core": "workspace:*"
   }
 }
