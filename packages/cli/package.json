@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "type": "module",
   "bin": {
-    "plaud": "./bin/plaud.ts"
+    "plaud": "./bin/plaud.cjs"
   },
   "dependencies": {
-    "@plaud/core": "workspace:*"
+    "@plaud/core": "workspace:*",
+    "tsx": "^4.7.0"
   }
 }

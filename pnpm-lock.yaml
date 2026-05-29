@@ -23,6 +23,9 @@ importers:
       '@plaud/core':
         specifier: workspace:*
         version: link:../core
+      tsx:
+        specifier: ^4.7.0
+        version: 4.22.0
 
   packages/core: {}
 
